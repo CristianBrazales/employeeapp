@@ -1,0 +1,381 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders our custom header empty inputs 1`] = `
+<div
+  className="full-window"
+>
+  <h2
+    className="text-header"
+  >
+    Lista de empleados
+  </h2>
+  <header
+    className="App-header"
+  >
+    <div
+      className="container-header"
+    >
+      <div
+        className="container-child-left"
+      >
+        <div
+          className="mx-5"
+        >
+          <div
+            className="text-center"
+          >
+            Filtrar por:
+          </div>
+          <select
+            aria-label="Default select example"
+            className="form-select"
+            onChange={[Function]}
+            value=""
+          >
+            <option>
+              Estado de vacunación
+            </option>
+            <option
+              value={true}
+            >
+              Si
+            </option>
+            <option
+              value={false}
+            >
+              No
+            </option>
+          </select>
+        </div>
+      </div>
+      <div
+        className="container-child-left"
+      >
+        <div
+          className="mx-5"
+        >
+          <div
+            className="text-center"
+          >
+            Filtrar por:
+          </div>
+          <select
+            aria-label="Default select example"
+            className="form-select"
+            onChange={[Function]}
+            value=""
+          >
+            <option
+              value=""
+            >
+              Tipo de vacuna:
+            </option>
+            <option
+              value="Sputnik"
+            >
+              Sputnik
+            </option>
+            <option
+              value="AstraZeneca"
+            >
+              AstraZeneca
+            </option>
+            <option
+              value="Pfizer"
+            >
+              Pfizer
+            </option>
+            <option
+              value="Jhonson&Jhonson"
+            >
+              Jhonson&Jhonson
+            </option>
+          </select>
+        </div>
+      </div>
+      <div
+        className="container-child-left"
+      >
+        <div
+          className="text-center"
+        >
+          <div>
+             Filtrar por fechas de vacunación:
+          </div>
+          <div
+            className="d-flex"
+          >
+            <div
+              className="react-datepicker-wrapper"
+            >
+              <div
+                className="react-datepicker__input-container"
+              >
+                <input
+                  className="text-center mx-5 border border-white rounded"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Desde"
+                  readOnly={false}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className="react-datepicker-wrapper"
+            >
+              <div
+                className="react-datepicker__input-container"
+              >
+                <input
+                  className="text-center mx-5 border border-white rounded"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Hasta"
+                  readOnly={false}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="container-child-right my-5"
+    >
+      <button
+        className="button-nuevo"
+        id="buttonNuevoId"
+        onClick={[Function]}
+      >
+        <div
+          className="icon"
+        >
+          <svg
+            className="h-6 w-6"
+            fill="none"
+            height="20"
+            stroke="currentColor"
+            strokeWidth={2}
+            viewBox="0 0 24 24"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 4v16m8-8H4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </div>
+        <div
+          className="button-texto"
+        >
+          Registrar nuevo empleado
+        </div>
+      </button>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`renders our custom nav bar empty inputs 1`] = `
+<div
+  className="full-window"
+>
+  <h2
+    className="text-header"
+  >
+    Lista de empleados
+  </h2>
+  <header
+    className="App-header"
+  >
+    <div
+      className="container-header"
+    >
+      <div
+        className="container-child-left"
+      >
+        <div
+          className="mx-5"
+        >
+          <div
+            className="text-center"
+          >
+            Filtrar por:
+          </div>
+          <select
+            aria-label="Default select example"
+            className="form-select"
+            onChange={[Function]}
+            value=""
+          >
+            <option>
+              Estado de vacunación
+            </option>
+            <option
+              value={true}
+            >
+              Si
+            </option>
+            <option
+              value={false}
+            >
+              No
+            </option>
+          </select>
+        </div>
+      </div>
+      <div
+        className="container-child-left"
+      >
+        <div
+          className="mx-5"
+        >
+          <div
+            className="text-center"
+          >
+            Filtrar por:
+          </div>
+          <select
+            aria-label="Default select example"
+            className="form-select"
+            onChange={[Function]}
+            value=""
+          >
+            <option
+              value=""
+            >
+              Tipo de vacuna:
+            </option>
+            <option
+              value="Sputnik"
+            >
+              Sputnik
+            </option>
+            <option
+              value="AstraZeneca"
+            >
+              AstraZeneca
+            </option>
+            <option
+              value="Pfizer"
+            >
+              Pfizer
+            </option>
+            <option
+              value="Jhonson&Jhonson"
+            >
+              Jhonson&Jhonson
+            </option>
+          </select>
+        </div>
+      </div>
+      <div
+        className="container-child-left"
+      >
+        <div
+          className="text-center"
+        >
+          <div>
+             Filtrar por fechas de vacunación:
+          </div>
+          <div
+            className="d-flex"
+          >
+            <div
+              className="react-datepicker-wrapper"
+            >
+              <div
+                className="react-datepicker__input-container"
+              >
+                <input
+                  className="text-center mx-5 border border-white rounded"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Desde"
+                  readOnly={false}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className="react-datepicker-wrapper"
+            >
+              <div
+                className="react-datepicker__input-container"
+              >
+                <input
+                  className="text-center mx-5 border border-white rounded"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Hasta"
+                  readOnly={false}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="container-child-right my-5"
+    >
+      <button
+        className="button-nuevo"
+        id="buttonNuevoId"
+        onClick={[Function]}
+      >
+        <div
+          className="icon"
+        >
+          <svg
+            className="h-6 w-6"
+            fill="none"
+            height="20"
+            stroke="currentColor"
+            strokeWidth={2}
+            viewBox="0 0 24 24"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 4v16m8-8H4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </div>
+        <div
+          className="button-texto"
+        >
+          Registrar nuevo empleado
+        </div>
+      </button>
+    </div>
+  </header>
+</div>
+`;

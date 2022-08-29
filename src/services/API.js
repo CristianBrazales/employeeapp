@@ -1,8 +1,10 @@
 import axios from "axios";
 import { User } from "../entities/User.tsx";
+//ideally should be saved to the env variables, for now we will keep it here
+const BASEURL = "http://localhost:3004/";
 
 const instance = axios.create({
-  baseURL: " http://localhost:3000/",
+  baseURL: BASEURL,
   timeout: 1000,
 });
 

@@ -6,14 +6,14 @@ import CustomTable from "../components/Table";
 import { deleteUser, getUsers } from "../services/API";
 import useAuth from "../context/authContext";
 import { generateOptionNavBar } from "../utils";
+import { useNavigate } from "react-router-dom";
 
 function AdminPanel() {
   const { authentication } = useAuth();
   let currentUser = authentication.user;
   let optionsNavbar = generateOptionNavBar(currentUser?.roles);
-
+  const navigate = useNavigate();
   const [showNuevo, setShow] = useState(false);
-
   const [isEdit, setEdit] = useState(false);
   const [editID, setEditID] = useState(0);
   const [users, setUsers] = useState([]);
@@ -43,7 +43,10 @@ function AdminPanel() {
 
   return (
     <div className="sidebar-container">
-      <NavBarCustom optionsList={optionsNavbar}></NavBarCustom>
+      <NavBarCustom
+        optionsList={optionsNavbar}
+        clickHanlder={navigate}
+      ></NavBarCustom>
       <div className="m-5">
         <Header
           setShow={setShow}

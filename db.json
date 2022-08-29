@@ -5,7 +5,7 @@
       "password": "$2a$10$MeZVYPCgw3RnHcjHebTaKepnl1y9Ma5v1q9y8avHiXwOTSxRGHYda",
       "nombres": "cristian Brazales",
       "cedula": "0023412312",
-      "apellidos": "Skywalker",
+      "apellidos": "Skywalker anakin",
       "roles": [
         "ADMIN",
         "USER"
@@ -94,16 +94,37 @@
       "correo": "el@tesla.com",
       "fechaNacimiento": "2022-08-29T19:34:01.681Z",
       "direccion": "",
-      "telefono": "",
-      "estadoVacunacion": false,
-      "tipoVacuna": "",
-      "fechaVacuna": "",
+      "telefono": "45678",
+      "estadoVacunacion": "true",
+      "tipoVacuna": "Pfizer",
+      "fechaVacuna": "2022-08-29T22:05:00.115Z",
       "numeroDosis": 0,
       "username": "el@tesla.com",
       "roles": [
         "USER"
       ],
-      "id": 5
+      "id": 5,
+      "direccionDomicilio": "tulum"
+    },
+    {
+      "email": "noVaccine@no.com",
+      "password": "$2a$10$XfjLdrWFo3JDQZ3q5pbqyugt21gifnm2FUXpcio1LU39gga5OvOk6",
+      "cedula": "4567812345",
+      "nombres": "anti",
+      "apellidos": "vaccines",
+      "correo": "noVaccine@no.com",
+      "fechaNacimiento": "2022-08-29T22:05:42.789Z",
+      "direccion": "",
+      "telefono": "",
+      "estadoVacunacion": false,
+      "tipoVacuna": "",
+      "fechaVacuna": "",
+      "numeroDosis": 0,
+      "username": "noVaccine@no.com",
+      "roles": [
+        "USER"
+      ],
+      "id": 6
     }
   ]
 }

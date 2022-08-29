@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+
 const NavBarCustom = (props) => {
   let options = props.optionsList;
-  const navigate = useNavigate();
+  let clickHanlder = props.clickHanlder;
   return (
     <Navbar bg="dark" variant="dark">
       <Container className="ms-5">
@@ -11,7 +11,7 @@ const NavBarCustom = (props) => {
           className={"fw-bold fs-3"}
           onClick={(e) => {
             e.preventDefault();
-            navigate("/");
+            clickHanlder("/");
           }}
         >
           Bienvenido a la nave!
@@ -20,10 +20,11 @@ const NavBarCustom = (props) => {
           {options.map((element) => {
             return (
               <Nav.Link
+                key={element.reference}
                 className={"fw-bold fs-4"}
                 onClick={(e) => {
                   e.preventDefault();
-                  navigate("/" + element.reference);
+                  clickHanlder("/" + element.reference);
                 }}
               >
                 {element.name}

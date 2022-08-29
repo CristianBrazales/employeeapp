@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders our custom table no inputs 1`] = `
+<div
+  className="container-table"
+>
+  <div
+    className="table-responsive"
+  >
+    <table
+      className="table table-sm table-bordered"
+      style={
+        Object {
+          "margin": 0,
+        }
+      }
+    >
+      <thead>
+        <tr>
+          <th
+            className="table-header-custom"
+          >
+            Cédula
+          </th>
+          <th
+            className="table-header-custom"
+          >
+            Nombre
+          </th>
+          <th
+            className="table-header-custom"
+          >
+            Apellido
+          </th>
+          <th
+            className="table-header-custom"
+          >
+            Correo electrónico
+          </th>
+          <th
+            className="table-header-custom"
+          >
+            Estado Vacunación
+          </th>
+          <th
+            className="table-header-custom"
+          >
+            Fecha Vacunación
+          </th>
+          <th
+            className="table-header-custom"
+          >
+            Tipo vacuna
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </div>
+</div>
+`;

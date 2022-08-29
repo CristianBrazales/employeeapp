@@ -9,6 +9,7 @@ import NavBarCustom from "../components/NavBar";
 import useAuth from "../context/authContext";
 import { getUserInfo, updateUser } from "../services/API";
 import { generateOptionNavBar } from "../utils";
+import { useNavigate } from "react-router-dom";
 
 function UserPage() {
   const { authentication } = useAuth();
@@ -25,6 +26,7 @@ function UserPage() {
   const [fechaVacuna, setFechaVacuna] = useState(new Date());
   const [displayAlert, setDisplayAlert] = useState(false);
   const [displayAlertMessage, setDisplayAlertMessage] = useState("");
+
   // control states
   const setAllStates = (
     fechaNacimiento = new Date(),
@@ -63,6 +65,8 @@ function UserPage() {
   const handleChange = (e, callback) => {
     callback(e.target.value);
   };
+  //navigate handler
+  const navigate = useNavigate();
 
   // submit handler
   const onSubmit = async () => {
@@ -93,7 +97,10 @@ function UserPage() {
 
   return (
     <div>
-      <NavBarCustom optionsList={optionsNavbar}></NavBarCustom>
+      <NavBarCustom
+        optionsList={optionsNavbar}
+        clickHanlder={navigate}
+      ></NavBarCustom>
       <div className="center-main-container">
         <div className="main-container-user">
           {displayAlert && (

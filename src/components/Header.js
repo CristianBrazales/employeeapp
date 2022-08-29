@@ -26,7 +26,6 @@ function Header(props) {
   }, [tipoVacuna]);
   useEffect(() => {
     let filtered = allUsers;
-    console.log("filtering");
     if (fechaVacunacionDesde) filtered = filterbyVaccineStartDate(allUsers);
     if (fechaVacunacionHasta) filtered = filterbyVaccineEndDate(filtered);
     setUsers(filtered);

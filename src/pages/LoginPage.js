@@ -15,8 +15,6 @@ function LoginPage() {
   const [displayAlertMessage, setDisplayAlertMessage] = useState("");
   const navigate = useNavigate();
   const { authentication } = useAuth();
-  console.log(authentication);
-
   useEffect(() => {
     setValid(correo !== "" && password !== "");
   }, [correo, password]);
@@ -73,20 +71,22 @@ function LoginPage() {
       <div className="inner-card ">
         <Card className="p-5">
           <Form style={{ width: "22rem" }}>
-            <Form.Group className="mb-3" controlId="correo">
-              <h5>Correo electrónico:</h5>
+            <Form.Group className="mb-3">
+              <h5>Correo:</h5>
               <Form.Control
                 type="text"
                 id="correo"
+                placeholder="Correo electrónico"
                 autoComplete="on"
                 onChange={(e) => setCorreo(e.target.value)}
                 required
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="password">
+            <Form.Group className="mb-3">
               <h5>Contraseña:</h5>
               <Form.Control
                 type="password"
+                placeholder="Contraseña"
                 id="password"
                 autoComplete="on"
                 onChange={(e) => setPassword(e.target.value)}

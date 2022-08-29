@@ -17,7 +17,6 @@ function CustomTable(props) {
   ];
 
   const data = props.data;
-  let refreshData = props.refreshData;
   let edithandler = props.edithandler;
   let deleteHandler = props.deleteHandler;
   return (

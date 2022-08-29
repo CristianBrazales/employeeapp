@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders our custom nav bar empty inputs 1`] = `
+<nav
+  className="navbar navbar-expand navbar-dark bg-dark"
+>
+  <div
+    className="ms-5 container"
+  >
+    <span
+      className="fw-bold fs-3 navbar-brand"
+      onClick={[Function]}
+    >
+      Bienvenido a la nave!
+    </span>
+    <div
+      className="me-auto navbar-nav"
+      onKeyDown={[Function]}
+    />
+  </div>
+</nav>
+`;
