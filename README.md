@@ -13,7 +13,18 @@ Ejemplo usuario normal  no pueden acceder a paneles de administrador.
 
 Para el manejo global del estado de la aplicacion, se utilizó React context API, esta provee información del usuario autentificado .
 
-Funcionalidad implementada:
+# Credenciales y usuarios
+
+El fake API cuenta con un usuario administrador con credenciales
+
+correo: admin@admin.com  contraseña:12345
+
+Para el resto de usuarios y recien generados, la applicacion  genera una contraseña.
+Esta es la primera palabra del nombre mas su numero de cedula.
+
+Ejemplo el usuario david sebastian con ci 1234567890, su contraseña generada es david1234567890
+
+# Funcionalidad implementada:
 
 1. Como Administrador requiere registrar, editar, listar y eliminar a los empleados.
 
