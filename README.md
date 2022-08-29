@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Applicacion para entrar a la nave Kruger
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta aplicacion tiene dos tipos de usuarios
+
+Administrador y usuario normal
+
 
 ## Available Scripts
 
