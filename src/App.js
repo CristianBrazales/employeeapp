@@ -3,7 +3,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AuthRoutesManagement from "./components/AuthRoutesManagement";
 import Layout from "./components/Layout";
-import AdminPanel from "./pages/AdminPanel";
+import AdminPanel from "./pages/AdminPanelPage";
 import LoginPage from "./pages/LoginPage";
 import UserPage from "./pages/UserPage";
 import CentralPage from "./pages/CentralPage";

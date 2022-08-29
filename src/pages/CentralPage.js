@@ -22,7 +22,7 @@ function CentralPage() {
                 className="m-2"
                 onClick={(e) => {
                   e.preventDefault();
-                  console.log("here");
+
                   navigate("/admin");
                 }}
               >

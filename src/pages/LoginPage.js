@@ -78,7 +78,7 @@ function LoginPage() {
               <Form.Control
                 type="text"
                 id="correo"
-                autoComplete="off"
+                autoComplete="on"
                 onChange={(e) => setCorreo(e.target.value)}
                 required
               />
@@ -88,13 +88,15 @@ function LoginPage() {
               <Form.Control
                 type="password"
                 id="password"
-                autoComplete="off"
+                autoComplete="on"
                 onChange={(e) => setPassword(e.target.value)}
                 required
               />
             </Form.Group>
             <div className="d-flex justify-content-around">
-              <Button onClick={handleSubmit}>Submit</Button>
+              <Button onClick={handleSubmit} type="submit">
+                Submit
+              </Button>
             </div>
           </Form>
           {displayAlert && (

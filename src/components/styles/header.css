@@ -6,10 +6,6 @@
   display: flex;
 }
 .container-child-left {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  margin-left: 0px;
 }
 .container-child-right {
   display: flex;
@@ -20,7 +16,7 @@
   pointer-events: none;
 }
 .button-nuevo {
-  width: 9rem;
+  width: 20rem;
   height: 2.5rem;
   background-color: #6758f6;
   color: white;
@@ -28,6 +24,17 @@
   border: 1px;
   border-color: #6758f6;
   display: flex;
+  align-items: center;
+}
+.button-filtrar {
+  width: 9rem;
+  height: 2.5rem;
+  background-color: #6758f6;
+  color: white;
+  border-radius: 6px;
+  border: 1px;
+  border-color: #6758f6;
+
   align-items: center;
 }
 .icon {

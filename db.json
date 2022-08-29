@@ -3,7 +3,7 @@
     {
       "email": "admin@admin.com",
       "password": "$2a$10$MeZVYPCgw3RnHcjHebTaKepnl1y9Ma5v1q9y8avHiXwOTSxRGHYda",
-      "nombres": "cristian",
+      "nombres": "cristian Brazales",
       "cedula": "0023412312",
       "apellidos": "Skywalker",
       "roles": [
@@ -14,12 +14,12 @@
       "fechaNacimiento": "2022-05-31T04:00:00.000Z",
       "direccion": "",
       "telefono": "1242523",
-      "estadoVacunacion": "false",
+      "estadoVacunacion": "true",
       "tipoVacuna": "Jhonson&Jhonson",
-      "fechaVacuna": "2022-08-01T05:37:09.000Z",
+      "fechaVacuna": "2022-06-14T05:37:09.000Z",
       "numeroDosis": "1",
       "username": "admin@admin.com",
-      "direccionDomicilio": "Death star",
+      "direccionDomicilio": "Death star av",
       "correo": "admin@admin.com"
     },
     {
@@ -33,15 +33,77 @@
       "direccion": "",
       "telefono": "23456",
       "estadoVacunacion": "true",
-      "tipoVacuna": "",
-      "fechaVacuna": "2022-04-05T12:59:27.000Z",
-      "numeroDosis": "1",
+      "tipoVacuna": "Pfizer",
+      "fechaVacuna": "2022-07-20T12:59:27.000Z",
+      "numeroDosis": "2",
       "username": "sky@star.com",
       "roles": [
         "USER"
       ],
       "id": 2,
       "direccionDomicilio": "av amazonas"
+    },
+    {
+      "email": "ky@ren.com",
+      "password": "$2a$10$MRDyc7oWfYYvWVY.04RgQuoTRP1cJYnjvK0ii9ixO5sqatG6byYyS",
+      "cedula": "2345678912",
+      "nombres": "Kylo",
+      "apellidos": "Ren",
+      "correo": "ky@ren.com",
+      "fechaNacimiento": "2022-08-29T18:23:10.832Z",
+      "direccion": "",
+      "telefono": "4567",
+      "estadoVacunacion": "true",
+      "tipoVacuna": "AstraZeneca",
+      "fechaVacuna": "2022-08-29T19:32:17.883Z",
+      "numeroDosis": 0,
+      "username": "ky@ren.com",
+      "roles": [
+        "USER"
+      ],
+      "id": 3,
+      "direccionDomicilio": "tonsupa"
+    },
+    {
+      "email": "jv@jbalvin.com",
+      "password": "$2a$10$obMSx3skKjw24uWY.hiDEejs.Rg.U0Gdnt6KeF5jDDTWCSWvsQAPy",
+      "cedula": "2345612341",
+      "nombres": "Juan",
+      "apellidos": "Valdez",
+      "correo": "jv@jbalvin.com",
+      "fechaNacimiento": "2022-08-29T19:28:19.041Z",
+      "direccion": "",
+      "telefono": "5678",
+      "estadoVacunacion": "true",
+      "tipoVacuna": "Sputnik",
+      "fechaVacuna": "2022-05-09T19:31:02.000Z",
+      "numeroDosis": "1",
+      "username": "jv@jbalvin.com",
+      "roles": [
+        "USER"
+      ],
+      "id": 4,
+      "direccionDomicilio": "Elm St"
+    },
+    {
+      "email": "el@tesla.com",
+      "password": "$2a$10$/MGdxoa7qhVQreu0e80ajODt4gFqm/3MZWvNXWu8M/oJotuBLu11S",
+      "cedula": "6666666666",
+      "nombres": "Elon",
+      "apellidos": "Musk",
+      "correo": "el@tesla.com",
+      "fechaNacimiento": "2022-08-29T19:34:01.681Z",
+      "direccion": "",
+      "telefono": "",
+      "estadoVacunacion": false,
+      "tipoVacuna": "",
+      "fechaVacuna": "",
+      "numeroDosis": 0,
+      "username": "el@tesla.com",
+      "roles": [
+        "USER"
+      ],
+      "id": 5
     }
   ]
 }

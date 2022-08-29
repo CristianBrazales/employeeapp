@@ -4,7 +4,7 @@ import "./styles/table.css";
 import { HiOutlinePencilAlt } from "react-icons/hi";
 import { RiDeleteBin2Fill } from "react-icons/ri";
 import { deleteUser } from "../services/API";
-import useAuth from "../context/authContext";
+
 function CustomTable(props) {
   const titles = [
     "Cédula",
@@ -18,6 +18,8 @@ function CustomTable(props) {
 
   const data = props.data;
   let refreshData = props.refreshData;
+  let edithandler = props.edithandler;
+  let deleteHandler = props.deleteHandler;
   return (
     <div className="container-table">
       <Table
@@ -41,7 +43,6 @@ function CustomTable(props) {
         </thead>
         <tbody>
           {data?.map((item) => {
-            console.log(item.fechaVacuna);
             let fechaVacuna, fechaVacunastr;
             if (item.fechaVacuna && item.fechaVacuna !== "") {
               fechaVacuna = new Date(item.fechaVacuna);
@@ -67,9 +68,7 @@ function CustomTable(props) {
                   <div
                     className="float-child"
                     onClick={() => {
-                      props.setEditID(item.id);
-                      props.setEdit(true);
-                      props.setShow(true);
+                      edithandler(item.id);
                     }}
                   >
                     <HiOutlinePencilAlt
@@ -80,10 +79,7 @@ function CustomTable(props) {
                   <div
                     className="float-child"
                     onClick={() => {
-                      (async () => {
-                        await deleteUser(item.id);
-                        refreshData();
-                      })();
+                      deleteHandler(item.id);
                     }}
                   >
                     <RiDeleteBin2Fill

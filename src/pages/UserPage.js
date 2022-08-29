@@ -14,8 +14,8 @@ function UserPage() {
   const { authentication } = useAuth();
   let currentUser = authentication.user;
 
-  let optionsNavbar = generateOptionNavBar(currentUser?.roles); 
-  
+  let optionsNavbar = generateOptionNavBar(currentUser?.roles);
+
   const [fechaNacimiento, setFechaNacimiento] = useState(new Date());
   const [direccionDomicilio, setDireccionDomicilio] = useState("");
   const [telefono, setTelefono] = useState("");
@@ -59,11 +59,6 @@ function UserPage() {
         user.fechaVacuna === "" ? new Date() : new Date(user.fechaVacuna)
       );
     })();
-  }, []);
-
-  //validate button
-  useEffect(() => {
-    // setButtonDisabled(!validate());
   }, []);
 
   const handleChange = (e, callback) => {
@@ -152,7 +147,7 @@ function UserPage() {
             </div>
             <div className="float-child-form">
               <span className="texto-form display-flex-center" id="nombre">
-                Estado de Vacunacion:
+                Estado de vacunación:
               </span>
               <span className="input-form">
                 <Form.Select

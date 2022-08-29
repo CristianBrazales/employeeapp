@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import NavBarCustom from "../components/NavBar";
 import CreateForm from "../components/CreateUserForm";
 import CustomTable from "../components/Table";
-import { getUsers } from "../services/API";
+import { deleteUser, getUsers } from "../services/API";
 import useAuth from "../context/authContext";
 import { generateOptionNavBar } from "../utils";
 
@@ -13,15 +13,26 @@ function AdminPanel() {
   let optionsNavbar = generateOptionNavBar(currentUser?.roles);
 
   const [showNuevo, setShow] = useState(false);
-  const [searchText, setSearchText] = useState("");
+
   const [isEdit, setEdit] = useState(false);
   const [editID, setEditID] = useState(0);
   const [users, setUsers] = useState([]);
+  const [allUsers, setAllUsers] = useState([]);
+  const edithandler = (id) => {
+    setEditID(id);
+    setEdit(true);
+    setShow(true);
+  };
+  const deleteHandler = async (id) => {
+    await deleteUser(id);
+    refreshData();
+  };
 
   useEffect(() => {
     (async () => {
       let usersData = await getUsers();
       setUsers(usersData);
+      setAllUsers(usersData);
     })();
   }, []);
 
@@ -37,12 +48,13 @@ function AdminPanel() {
         <Header
           setShow={setShow}
           setEdit={setEdit}
-          setSearchText={setSearchText}
           setEditID={setEditID}
+          setUsers={setUsers}
+          allUsers={allUsers}
         ></Header>
       </div>
       {showNuevo && (
-        <div className="m-5">
+        <div className="mx-5 my-1">
           <CreateForm
             isEdit={isEdit}
             editID={editID}
@@ -56,10 +68,8 @@ function AdminPanel() {
       <div className="table-container m-5 bg-white border">
         <CustomTable
           data={users}
-          setEdit={setEdit}
-          setShow={setShow}
-          setEditID={setEditID}
-          refreshData={refreshData}
+          deleteHandler={deleteHandler}
+          edithandler={edithandler}
         ></CustomTable>
       </div>
     </div>
