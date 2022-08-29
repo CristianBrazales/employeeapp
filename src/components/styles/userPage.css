@@ -1,0 +1,105 @@
+.main-container-user {
+  background: white;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+  max-width: 60rem;
+  margin-top: 15rem;
+}
+
+.title {
+  text-align: center;
+  padding-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+.float-container-form {
+  border: 3px solid #fff;
+  width: 100% !important;
+  overflow: auto;
+  padding-top: 3%;
+}
+
+.float-child-form {
+  min-width: 50%;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+.float-child-form-2 {
+  width: 50%;
+  float: left;
+}
+.texto-form {
+  min-width: 20%;
+}
+.display-flex-center {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  overflow: hidden;
+}
+.slider-custom {
+  width: 12rem !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  align-items: center !important;
+  display: flex !important;
+}
+.button-form {
+  width: 8rem;
+  height: 2.5rem;
+  background-color: #6758f6;
+  color: white;
+  border-radius: 6px;
+  border: 1px;
+  border-color: #6758f6;
+  display: inline-block;
+  margin: 1rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+.button-container {
+  text-align: center;
+}
+#nombre {
+  padding-right: 1%;
+}
+#image {
+  padding-right: 2%;
+}
+.justify-right {
+  justify-content: right !important;
+}
+.input-form {
+  width: 45%;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+.icon-form {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  padding-right: 4px;
+}
+button:disabled,
+button[disabled] {
+  opacity: 0.5;
+  background-color: #6758f6;
+}
+.alert-custom {
+  margin-top: 10px;
+  opacity: 0.8 !important;
+  font-weight: bold !important;
+}
+input:required:invalid {
+  border: 2px solid red;
+}
+input:required:valid {
+  border: 2px solid rgb(181, 175, 175);
+}
+div {
+  font-size: 20px;
+  font-weight: 400;
+}

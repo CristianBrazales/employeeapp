@@ -1,0 +1,48 @@
+.container-table {
+  background-color: white;
+  max-height: 500px;
+  overflow-y: auto;
+}
+.image-table {
+  width: 20px;
+  height: 20px;
+}
+
+.table-header-custom {
+  font-size: medium;
+  text-align: center;
+}
+.center {
+  text-align: center;
+}
+table {
+  border-radius: 0.5rem !important;
+}
+table {
+  overflow-x: scroll;
+  max-height: 10px !important;
+}
+
+table,
+th {
+  border: 0;
+}
+td {
+  text-align: center;
+}
+.no-border {
+  border: 0 !important;
+}
+
+.float-container {
+  border: 3px solid #fff;
+}
+
+.float-child {
+  width: 50%;
+  float: left;
+}
+.icon-table {
+  width: 25px;
+  height: 25px;
+}

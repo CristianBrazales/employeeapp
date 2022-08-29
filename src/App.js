@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import AuthRoutesManagement from "./components/AuthRoutesManagement";
+import Layout from "./components/Layout";
+import AdminPanel from "./pages/AdminPanel";
+import LoginPage from "./pages/LoginPage";
+import UserPage from "./pages/UserPage";
+import CentralPage from "./pages/CentralPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/login" element={<LoginPage></LoginPage>} />
+      
+      <Route path="/" element={<AuthRoutesManagement />}>
+        <Route path="/" element={<CentralPage></CentralPage>} />
+        <Route path="/admin" element={<AdminPanel></AdminPanel>} />
+        <Route path="/user" element={<UserPage></UserPage>} />
+      </Route>
+
+      <Route path="*" element={<LoginPage></LoginPage>}></Route>
+    </Routes>
   );
 }
 

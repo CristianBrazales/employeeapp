@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "email": "admin@admin.com",
+      "password": "$2a$10$MeZVYPCgw3RnHcjHebTaKepnl1y9Ma5v1q9y8avHiXwOTSxRGHYda",
+      "nombres": "cristianAdmin",
+      "cedula": "0023412312",
+      "apellidos": "ADMINis",
+      "role": "ADMIN",
+      "id": 1,
+      "fechaNacimiento": "2022-05-31T04:00:00.000Z",
+      "direccion": "",
+      "telefono": "123123",
+      "estadoVacunacion": "true",
+      "tipoVacuna": "Jhonson&Jhonson",
+      "fechaVacuna": "2022-08-01T05:37:09.000Z",
+      "numeroDosis": "1",
+      "username": "admin@admin.com",
+      "direccionDomicilio": "AV tomate 1",
+      "correo": "admin@admin.com"
+    },
+    {
+      "email": "lme@mas.com",
+      "password": "$2a$10$kdIWjOwxQwRyz9N/ZfM3HO8z.eY3Zk30TgoSLu9bz41TFS6Sba/zq",
+      "cedula": "3456781122",
+      "nombres": "Luis",
+      "apellidos": "mendoza",
+      "correo": "lme@mas.com",
+      "fechaNacimiento": "2022-06-14T05:30:22.000Z",
+      "direccion": "",
+      "telefono": "56789",
+      "estadoVacunacion": "true",
+      "tipoVacuna": "AstraZeneca",
+      "fechaVacuna": "2022-06-07T05:39:01.000Z",
+      "numeroDosis": "1",
+      "username": "lme@mas.com",
+      "id": 4,
+      "direccionDomicilio": "LATACUNGA"
+    },
+    {
+      "email": "tip@mas.com",
+      "password": "$2a$10$n1ia49/y8vqv8SFg4j1rH.tATRsQk3W6xNcINAL6kHFKxSsjzAwdy",
+      "cedula": "1231413234",
+      "nombres": "Karmen",
+      "apellidos": "tipan",
+      "correo": "tip@mas.com",
+      "fechaNacimiento": "2022-08-29T05:41:14.624Z",
+      "direccion": "",
+      "telefono": "091234342",
+      "estadoVacunacion": false,
+      "tipoVacuna": "",
+      "fechaVacuna": null,
+      "numeroDosis": 0,
+      "username": "tip@mas.com",
+      "id": 5,
+      "direccionDomicilio": "Tonsupa"
+    }
+  ]
+}

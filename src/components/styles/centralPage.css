@@ -1,0 +1,18 @@
+.container-main-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  color: white;
+}
+.full-page-central {
+  height: 100%;
+  width: 100%;
+  background-color: #28242c;
+  background-image: linear-gradient(to bottom right, #0d6efd, #ffffff);
+}
+
+.container-right-home {
+  width: 50%;
+}

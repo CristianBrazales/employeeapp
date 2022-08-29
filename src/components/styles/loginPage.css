@@ -1,0 +1,27 @@
+.icon-login-page {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.alert-login {
+  margin-top: 10px;
+  opacity: 0.8 !important;
+  font-weight: bold !important;
+  color: red !important;
+}
+.login-card {
+  background-color: #28242c;
+  background-image: linear-gradient(to bottom right, #0d6efd, #ffffff);
+  align-items: center;
+  min-height: 100vh;
+}
+
+.header-login {
+  color: white;
+}
+
+.management-icon {
+  fill: white;
+}
