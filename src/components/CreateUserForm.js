@@ -51,12 +51,10 @@ function CreateForm(props) {
           userData.email
         );
       })();
-    } else {
-      //setAllStates();
     }
     return () => {};
   }, [editID]);
-  //
+  // validate on each section
   useEffect(() => {
     setButtonDisabled(!validate());
   }, [cedula, nombres, apellidos, correo]);
@@ -125,7 +123,7 @@ function CreateForm(props) {
         Usuarios y claves generadas automaticamente, Usuario: correo electronico{" "}
       </div>
       <div className="note">
-        Clave: primera palabra del nombre mas su numero de cedula (ie
+        Clave: primera palabra del nombre más su numero de cedula (ie
         Ramiro0123456789)
       </div>
       <div className="float-container-form display-flex-center ">

@@ -13,7 +13,7 @@ import { generateOptionNavBar } from "../utils";
 function UserPage() {
   const { authentication } = useAuth();
   let currentUser = authentication.user;
-
+  // generate nav bar by permissions
   let optionsNavbar = generateOptionNavBar(currentUser?.roles);
 
   const [fechaNacimiento, setFechaNacimiento] = useState(new Date());
@@ -23,10 +23,9 @@ function UserPage() {
   const [tipoVacuna, setTipoVacuna] = useState("");
   const [numeroDosis, setNumeroDosis] = useState(0);
   const [fechaVacuna, setFechaVacuna] = useState(new Date());
-
   const [displayAlert, setDisplayAlert] = useState(false);
   const [displayAlertMessage, setDisplayAlertMessage] = useState("");
-
+  // control states
   const setAllStates = (
     fechaNacimiento = new Date(),
     direccionDomicilio = "",
