@@ -24,6 +24,16 @@ Esta es la primera palabra del nombre mas su numero de cedula.
 
 Ejemplo el usuario david sebastian con ci 1234567890, su contraseña generada es david1234567890
 
+# Instrucciones para levantar la aplicacion
+
+Ejecutar los siguientes comandos:
+
+npm run install
+
+npm run dev
+
+Desarrollado con  Node v14.15.2.
+
 # Funcionalidad implementada:
 
 1. Como Administrador requiere registrar, editar, listar y eliminar a los empleados.
