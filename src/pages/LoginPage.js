@@ -4,22 +4,27 @@ import { useNavigate } from "react-router-dom";
 import useAuth from "../context/authContext";
 import { loginUser } from "../services/API";
 import { MdManageAccounts } from "react-icons/md";
-import { IconContext } from "react-icons";
 import "../App.css";
 import "../components/styles/loginPage.css";
 function LoginPage() {
   const [correo, setCorreo] = useState("");
   const [password, setPassword] = useState("");
   const [validForm, setValid] = useState(false);
-  const [error, setError] = useState("");
-  const [success, setSuccess] = useState(false);
   const { setAuthentication } = useAuth();
   const [displayAlert, setDisplayAlert] = useState(false);
   const [displayAlertMessage, setDisplayAlertMessage] = useState("");
   const navigate = useNavigate();
+  const { authentication } = useAuth();
+  console.log(authentication);
+
   useEffect(() => {
     setValid(correo !== "" && password !== "");
   }, [correo, password]);
+  useEffect(() => {
+    // redirect if logged in
+    let currentUser = authentication?.user;
+    if (currentUser) navigate("/");
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -37,7 +42,6 @@ function LoginPage() {
         // reset fields
         setCorreo("");
         setPassword("");
-        setSuccess(true);
         navigate("/");
       }
     } catch (err) {
@@ -47,10 +51,10 @@ function LoginPage() {
       } else {
         setDisplayAlertMessage("Something went wrong, please try again later");
       }
-      setSuccess(false);
+
       setDisplayAlert(true);
       setTimeout(() => {
-        // setDisplayAlert(false);
+        setDisplayAlert(false);
       }, 2000);
     }
   };
@@ -70,7 +74,7 @@ function LoginPage() {
         <Card className="p-5">
           <Form style={{ width: "22rem" }}>
             <Form.Group className="mb-3" controlId="correo">
-              <h5>Correo electronico:</h5>
+              <h5>Correo electrónico:</h5>
               <Form.Control
                 type="text"
                 id="correo"
@@ -80,7 +84,7 @@ function LoginPage() {
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="password">
-              <h5>Password:</h5>
+              <h5>Contraseña:</h5>
               <Form.Control
                 type="password"
                 id="password"

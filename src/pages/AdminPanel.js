@@ -4,9 +4,14 @@ import NavBarCustom from "../components/NavBar";
 import CreateForm from "../components/CreateUserForm";
 import CustomTable from "../components/Table";
 import { getUsers } from "../services/API";
+import useAuth from "../context/authContext";
+import { generateOptionNavBar } from "../utils";
 
 function AdminPanel() {
-  let options = [{ name: "Admin Panel", reference: "admin" }];
+  const { authentication } = useAuth();
+  let currentUser = authentication.user;
+  let optionsNavbar = generateOptionNavBar(currentUser?.roles);
+
   const [showNuevo, setShow] = useState(false);
   const [searchText, setSearchText] = useState("");
   const [isEdit, setEdit] = useState(false);
@@ -27,7 +32,7 @@ function AdminPanel() {
 
   return (
     <div className="sidebar-container">
-      <NavBarCustom optionsList={options}></NavBarCustom>
+      <NavBarCustom optionsList={optionsNavbar}></NavBarCustom>
       <div className="m-5">
         <Header
           setShow={setShow}

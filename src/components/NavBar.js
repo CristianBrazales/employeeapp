@@ -7,7 +7,7 @@ const NavBarCustom = (props) => {
     <Navbar bg="dark" variant="dark">
       <Container className="ms-5">
         <Navbar.Brand href="/" className={"fw-bold fs-3"}>
-          Home
+          Bienvenido a la nave!
         </Navbar.Brand>
         <Nav className="me-auto">
           {options.map((element) => {

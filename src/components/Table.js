@@ -11,8 +11,8 @@ function CustomTable(props) {
     "Nombre",
     "Apellido",
     "Correo electrónico",
-    "Estado vacunacion",
-    "Fecha vacunacion",
+    "Estado Vacunación",
+    "Fecha Vacunación",
     "Tipo vacuna",
   ];
 
@@ -55,7 +55,12 @@ function CustomTable(props) {
                 <td>{item.nombres}</td>
                 <td>{item.apellidos}</td>
                 <td>{item.email}</td>
-                <td>{item.estadoVacunacion ? "Si" : "No"}</td>
+                <td>
+                  {item.estadoVacunacion === "true" ||
+                  item.estadoVacunacion === true
+                    ? "Si"
+                    : "No"}
+                </td>
                 <td>{fechaVacunastr}</td>
                 <td>{item.tipoVacuna ? item.tipoVacuna : "No Info"}</td>
                 <td className="float-container ">

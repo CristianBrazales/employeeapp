@@ -20,3 +20,13 @@ function containsSpecialChars(str) {
 function containsNumber(str) {
   return /\d/.test(str);
 }
+export const generateOptionNavBar = function (roles) {
+  let options = [];
+  if (roles.find((role) => role === "ADMIN")) {
+    options.push({ name: "Panel de administrador", reference: "admin" });
+  }
+  if (roles.find((role) => role === "USER")) {
+    options.push({ name: "Panel de usuario", reference: "user" });
+  }
+  return options;
+};

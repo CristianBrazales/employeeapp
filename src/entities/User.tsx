@@ -13,6 +13,7 @@ export class User {
   numeroDosis: number;
   password: string;
   username: string;
+  roles: string[];
 
   constructor(obj) {
     this.cedula = obj.cedula || "";
@@ -29,5 +30,6 @@ export class User {
     this.tipoVacuna = obj.tipoVacuna || "";
     this.fechaVacuna = obj.fechaVacuna || "";
     this.numeroDosis = obj.numeroDosis || 0;
+    this.roles = ["USER"];
   }
 }

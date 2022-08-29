@@ -8,13 +8,14 @@ import "react-datepicker/dist/react-datepicker.css";
 import NavBarCustom from "../components/NavBar";
 import useAuth from "../context/authContext";
 import { getUserInfo, updateUser } from "../services/API";
+import { generateOptionNavBar } from "../utils";
 
 function UserPage() {
-  let options = [{ name: "Informacion usuario", reference: "user" }];
-
   const { authentication } = useAuth();
   let currentUser = authentication.user;
 
+  let optionsNavbar = generateOptionNavBar(currentUser?.roles); 
+  
   const [fechaNacimiento, setFechaNacimiento] = useState(new Date());
   const [direccionDomicilio, setDireccionDomicilio] = useState("");
   const [telefono, setTelefono] = useState("");
@@ -55,7 +56,7 @@ function UserPage() {
         user.estadoVacunacion,
         user.tipoVacuna,
         user.numeroDosis,
-        new Date(user.fechaVacuna)
+        user.fechaVacuna === "" ? new Date() : new Date(user.fechaVacuna)
       );
     })();
   }, []);
@@ -98,7 +99,7 @@ function UserPage() {
 
   return (
     <div>
-      <NavBarCustom optionsList={options}></NavBarCustom>
+      <NavBarCustom optionsList={optionsNavbar}></NavBarCustom>
       <div className="center-main-container">
         <div className="main-container-user">
           {displayAlert && (
@@ -197,6 +198,7 @@ function UserPage() {
                         handleChange(e, setTipoVacuna);
                       }}
                     >
+                      <option value={""}>Seleccione una:</option>
                       <option value={"Sputnik"}>Sputnik</option>
                       <option value={"AstraZeneca"}>AstraZeneca</option>
                       <option value={"Pfizer"}>Pfizer</option>
