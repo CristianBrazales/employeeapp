@@ -71,6 +71,15 @@ Para ejecutarlas correr: npm run tests-with-server
 ### Scripts
 
 Para ejecutar tanto la aplicación como el servidor (Backend) : npm run dev
+
+
 Para ejecutar solo el fake api (servidor backend) :     npm run  start-server
+
+
 Para ejecutar solo el front end : npm runstart
+
+
 Para correr los test : npm run tests-with-server ( esto también ejecuta el backend, asegurarse que no esté ejecutado)
+
+
+
